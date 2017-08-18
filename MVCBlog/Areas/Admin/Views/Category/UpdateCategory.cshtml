@@ -1,14 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "AddCategory";
+    ViewBag.Title = "UpdateCategory";
     Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
 }
 
-@model MVCBlog.Areas.Admin.Models.DTO.CategoryVM
-@using MVCBlog.Areas.Admin.Models.Types
 <section class="content-header">
     <h1>
-        Kategori Ekle
+        Kategori Güncelleme
         <small>Preview</small>
     </h1>
     <ol class="breadcrumb">
@@ -19,22 +17,23 @@
 </section>
 <!-- Main content -->
 <section class="content">
-   
+
     <div class="row">
-        
+
         <div class="col-md-9">
-       @Html.Partial("/Areas/Admin/Views/Shared/Partial/FormMessagesPart.cshtml")
-            
-        @Html.Partial("Partial/CategoryForm")    
-   
+            @Html.Partial("/Areas/Admin/Views/Shared/Partial/FormMessagesPart.cshtml")
+
+            @Html.Partial("Partial/CategoryForm")
+
             <!-- /.box -->
         </div>
         <!--/.col (left) -->
         <!-- right column -->
         <div class="col-md-6">
-    
+
         </div>
         <!--/.col (right) -->
     </div>
     <!-- /.row -->
 </section>
+

@@ -100,17 +100,21 @@
     <Content Include="Areas\Admin\Content\css\AdminLTE.css" />
     <Content Include="Areas\Admin\Content\css\blue.css" />
     <Content Include="Areas\Admin\Content\css\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Content\css\dataTables.bootstrap.min.css" />
     <Content Include="Areas\Admin\Content\css\font-awesome.min.css" />
     <Content Include="Areas\Admin\Content\css\ionicons.min.css" />
     <Content Include="Areas\Admin\Content\css\_all-skins.min.css" />
     <Content Include="Areas\Admin\Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Areas\Admin\Content\img\61391.png" />
     <Content Include="Areas\Admin\Content\img\user2-160x160.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\adminlte.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\demo.js" />
     <Content Include="Scripts\fastclick.js" />
     <Content Include="Scripts\icheck.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.slimscroll.min.js" />
     <Content Include="Web.config" />
@@ -118,14 +122,17 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminUserController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Models\Attribute\LoginControl.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\AdminUserVM.cs" />
     <Compile Include="Areas\Admin\Models\DTO\BaseVM.cs" />
     <Compile Include="Areas\Admin\Models\DTO\CategoryVM.cs" />
     <Compile Include="Areas\Admin\Models\DTO\LoginModel.cs" />
+    <Compile Include="Areas\Admin\Models\Types\FormMessages.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,6 +157,15 @@
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\FormMessagesPart.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Content\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Areas\Admin\Views\Category\Partial\CategoryForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminUser\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminUser\AddAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminUser\Partial\AdminForm.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminUser\UpdateAdmin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

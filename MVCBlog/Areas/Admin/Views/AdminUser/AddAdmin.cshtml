@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "AddCategory";
+    ViewBag.Title = "AddAdmin";
     Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
 }
 
@@ -8,7 +8,7 @@
 @using MVCBlog.Areas.Admin.Models.Types
 <section class="content-header">
     <h1>
-        Kategori Ekle
+        Admin Güncelle
         <small>Preview</small>
     </h1>
     <ol class="breadcrumb">
@@ -19,22 +19,23 @@
 </section>
 <!-- Main content -->
 <section class="content">
-   
+
     <div class="row">
-        
+
         <div class="col-md-9">
-       @Html.Partial("/Areas/Admin/Views/Shared/Partial/FormMessagesPart.cshtml")
-            
-        @Html.Partial("Partial/CategoryForm")    
-   
+            @Html.Partial("/Areas/Admin/Views/Shared/Partial/FormMessagesPart.cshtml")
+
+            @Html.Partial("Partial/AdminForm")
+
             <!-- /.box -->
         </div>
         <!--/.col (left) -->
         <!-- right column -->
         <div class="col-md-6">
-    
+
         </div>
         <!--/.col (right) -->
     </div>
     <!-- /.row -->
 </section>
+
