@@ -444,6 +444,7 @@
     <Compile Include="Areas\Admin\Models\DTO\CategoryVM.cs" />
     <Compile Include="Areas\Admin\Models\DTO\LoginModel.cs" />
     <Compile Include="Areas\Admin\Models\DTO\SiteMenuVm.cs" />
+    <Compile Include="Areas\Admin\Models\Services\HTMLDataSourceServices\DrpServices.cs" />
     <Compile Include="Areas\Admin\Models\Types\FormMessages.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -498,6 +499,8 @@
     <Content Include="ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="Areas\Admin\Views\BlogPost\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\BlogPost\UpdateBlogPost.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
