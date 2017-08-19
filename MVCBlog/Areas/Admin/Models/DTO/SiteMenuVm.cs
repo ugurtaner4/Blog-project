@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVCBlog.Models.ORM.Entity
+namespace MVCBlog.Areas.Admin.Models.DTO
 {
-    public class SiteMenu : BaseEntity
+    public class SiteMenuVm : BaseVM
     {
         public string Name { get; set; }
         public string Url { get; set; }
